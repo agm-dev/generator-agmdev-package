@@ -3,12 +3,13 @@ const Generator = require("yeoman-generator");
 
 module.exports = class extends Generator {
   initializing() {
-    this.composeWith(require.resolve('generator-agmdev-barebone/generators/app'));
+    this.composeWith(
+      require.resolve("generator-agmdev-barebone/generators/app"),
+      { name: "agmdev-package" }
+    );
   }
 
-  prompting() {
-
-  }
+  prompting() {}
 
   writing() {
     // .travis.yml
@@ -16,12 +17,14 @@ module.exports = class extends Generator {
     this.fs.copy(this.templatePath(travis), this.destinationPath(travis));
   }
 
-  install() {
-
-  }
+  install() {}
 
   end() {
-    this.log(`Don't forget to enable and configure your project in the Travis dashboard with the enviroment variables used in file .travis.yml!`)
-    this.log(`You have to configure following environment variables:\n- NPM_EMAIL\n- NPM_TOKEN\n- CODACY_PROJECT_TOKEN`);
+    this.log(
+      `Don't forget to enable and configure your project in the Travis dashboard with the enviroment variables used in file .travis.yml!`
+    );
+    this.log(
+      `You have to configure following environment variables:\n- NPM_EMAIL\n- NPM_TOKEN\n- CODACY_PROJECT_TOKEN`
+    );
   }
 };
