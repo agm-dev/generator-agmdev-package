@@ -1,21 +1,21 @@
-# generator-agmdev-barebone [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Yeoman generator for barebone NodeJS project
+# generator-agmdev-package [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+> Yeoman generator for NPM package projet.
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-agmdev-barebone using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and generator-agmdev-package using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
 npm install -g yo
-npm install -g generator-agmdev-barebone
+npm install -g generator-agmdev-package
 ```
 
 Then generate your new project:
 
 ```bash
-mkdir new-barebone-project
-cd new-barebone-project
-yo agmdev-barebone
+mkdir new-package-project
+cd new-package-project
+yo agmdev-package
 ```
 
 ## Getting To Know Yeoman
@@ -30,9 +30,9 @@ yo agmdev-barebone
 MIT © [Adrian Gonzalo](https://agm-dev.ninja)
 
 
-[npm-image]: https://badge.fury.io/js/generator-agmdev-barebone.svg
-[npm-url]: https://npmjs.org/package/generator-agmdev-barebone
-[travis-image]: https://travis-ci.org/agm-dev/generator-agmdev-barebone.svg?branch=master
-[travis-url]: https://travis-ci.org/agm-dev/generator-agmdev-barebone
-[daviddm-image]: https://david-dm.org/agm-dev/generator-agmdev-barebone.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/agm-dev/generator-agmdev-barebone
+[npm-image]: https://badge.fury.io/js/generator-agmdev-package.svg
+[npm-url]: https://npmjs.org/package/generator-agmdev-package
+[travis-image]: https://travis-ci.org/agm-dev/generator-agmdev-package.svg?branch=master
+[travis-url]: https://travis-ci.org/agm-dev/generator-agmdev-package
+[daviddm-image]: https://david-dm.org/agm-dev/generator-agmdev-package.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/agm-dev/generator-agmdev-package
